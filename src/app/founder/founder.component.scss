@@ -1,0 +1,57 @@
+.founder {
+  padding: 0px;
+  background-color: #f7f8fc;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12 {
+  flex-basis: 100%;
+  padding: 10px;
+}
+
+.col-6 {
+  flex-basis: 50%;
+}
+
+.founder-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.founder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  margin: 0 auto;
+}
+
+.founder .content h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #fe3252;
+}
+
+.founder .info {
+  margin-top: 50px;
+}
+
+.founder .info h2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+
+.founder p {
+  color: #dee2e3;
+  line-height: 30px;
+  width: 400px;
+}

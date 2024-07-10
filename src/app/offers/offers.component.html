@@ -1,0 +1,54 @@
+<div class="offers">
+  <div [style.display]="display" class="row" style="height: 20%">
+    <div class="col-12">
+      <button>Check Our Offer</button>
+    </div>
+  </div>
+  <div
+    [style.padding]="content1_padding"
+    [style.background-image]="'url(assets/images/' + background_1 + ')'"
+    [style.background-position]="background1_position"
+    style="background-repeat: no-repeat"
+  >
+    <div class="row">
+      <div class="col-6">
+        <img
+          [src]="'assets/images/' + image_1"
+          alt="Offer Image"
+          [style.width]="image_width"
+          [style.height]="image_height"
+        />
+      </div>
+      <div class="col-6" [style.background-color]="background_color">
+        <div [style.padding]="content_padding">
+          <h2 [style.color]="color">{{ title }}</h2>
+          <p>{{ description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    [style.padding]="content2_padding"
+    [style.background-image]="'url(assets/images/' + background_2 + ')'"
+    style="background-repeat: no-repeat"
+    [style.background-position]="background2_position"
+  >
+    <div class="row">
+      <div class="col-6" [style.background-color]="background_color">
+        <div [style.padding]="content_padding">
+          <h2 [style.color]="color">{{ title }}</h2>
+          <p>{{ description }}</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <img
+          [src]="'assets/images/' + image_2"
+          alt="Offer Image"
+          [style.width]="image_width"
+          [style.height]="image_height"
+        />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,123 @@
+modal-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media not all and (min-height: 600px) and (min-width: 768px) {
+  ion-modal ion-backdrop {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-height: 0px) and (min-width: 0px) {
+  .modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* modal-transparency class */
+.modal-transparency {
+  --background: unset;
+  --height: 80%;
+}
+
+.main-view {
+  background: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5;
+  background-color: unset !important;
+}
+.modal_content {
+  display: block;
+  position: relative;
+  top: calc(50% - (50% / 2));
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 70%;
+  padding: 10px;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 10px;
+  color: #333;
+  background: #e8e8e8;
+  background: -moz-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+  background: -webkit-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+  background: linear-gradient(to bottom, #fff 0%, #e8e8e8 100%);
+  border-radius: 1px;
+  box-shadow: 0 2px 3px rgba(51, 51, 51, 0.35);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+.circle {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  left: 50%;
+  margin-left: -55px;
+  top: -75px;
+  background: #fff;
+  z-index: 10000;
+  background-size: 55% 55%;
+  box-shadow: 0 0 35px #dae5ef;
+}
+
+.modal-content {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.modal-content h2 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 50px 0 0 0;
+  color: #e33048;
+}
+
+.modal-content p {
+  color: #dee2e3;
+  font-weight: 400;
+}
+
+.modal-content .visit-btn {
+  background-color: #e33048;
+  color: #ffffff;
+  text-transform: lowercase;
+  font-weight: 300;
+  margin: 40px 0 0;
+  border: none;
+  border-radius: 2px;
+  font-size: 13px;
+  box-shadow: 0 0 35px #dae5ef;
+  cursor: pointer;
+  padding: 5px 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+:host {
+  --background: none !important;
+}

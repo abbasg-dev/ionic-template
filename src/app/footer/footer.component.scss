@@ -1,0 +1,42 @@
+.footer {
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer h2 {
+  color: #000;
+  font-size: 45px;
+  font-weight: 400;
+  margin: 50px 0 0 0;
+}
+
+.footer p {
+  color: #dee2e3;
+  font-weight: 400;
+}
+
+.footer button {
+  background-color: #fff;
+  padding: 20px 35px;
+  margin: 60px 0 0;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #42a8ff;
+  box-shadow: 0 0 35px #dae5ef;
+  cursor: pointer;
+}
+
+.col-12 {
+  flex-basis: 100%;
+  padding: 10px;
+}

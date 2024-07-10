@@ -1,0 +1,16 @@
+<div class="services">
+  <div class="row" style="height: 20%; margin: 60px 0">
+    <div class="col-12" style="text-align: center">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h2>Lorem ipsum dolor sit amet</h2>
+    </div>
+  </div>
+  <div class="row" style="height: 80%">
+    <div class="col-12" style="display: flex; justify-content: center">
+      <app-service-item-component
+        *ngFor="let service of services"
+        [service]="service"
+      ></app-service-item-component>
+    </div>
+  </div>
+</div>
